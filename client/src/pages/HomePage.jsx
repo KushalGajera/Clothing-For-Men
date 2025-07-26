@@ -189,10 +189,10 @@ const HomePage = () => {
                       <p className="text-gray-600 text-sm mb-2">{product.brand}</p>
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2">
-                          <span className="font-bold text-lg">${product.price}</span>
+                          <span className="font-bold text-lg">₹{product.price}</span>
                           {product.originalPrice && product.originalPrice > product.price && (
                             <span className="text-gray-500 line-through text-sm">
-                              ${product.originalPrice}
+                              ₹{product.originalPrice}
                             </span>
                           )}
                         </div>

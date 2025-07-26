@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
-import { href, Link , useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Search, ShoppingBag, User, Menu, X, Heart } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext'
 import { useCart } from '../contexts/CartContext'
 import { Input } from './ui/input';
 import { Button } from './ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from './ui/dropdown-menu';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +34,12 @@ const Header = () => {
     };
 
     const navigationItems = [
-        { name: 'New', href: '/products?sort=newset' },
+        { name: 'New', href: '/products?sort=newest' },
         { name: 'Men', href: '/products' },
         { name: 'Shoes', href: '/products?category=shoes' },
         { name: 'Clothing', href: '/products?category=shirts,pants,jackets' },
-        { name: 'Accessories', href: '/products?category=accessries' },
-        { name: 'Sale', href: '/products?sales=true' },
+        { name: 'Accessories', href: '/products?category=accessories' },
+        { name: 'Sale', href: '/products?sale=true' },
         { name: 'Contact', href: '/contact' }
     ];
 

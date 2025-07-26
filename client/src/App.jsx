@@ -14,6 +14,9 @@ import ContactPage from './pages/ContactPage';
 import ShoppingInfoPage from './pages/ShoppingInfoPage';
 import ReturnExchangePage from './pages/ReturnExchangePage';
 import JoinUsPage from './pages/JoinUsPage';
+import AboutPage from './pages/AboutPage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -24,7 +27,7 @@ function App() {
       <AuthProvider>
         <CartProvider>
           <Router>
-            <div className="main-h-screen flec flex-col">
+            <div className="min-h-screen flex flex-col">
               <Header />
               <main className="flex-1">
                 <Routes>
@@ -37,6 +40,9 @@ function App() {
                   <Route path="/shopping-info" element={<ShoppingInfoPage />} />
                   <Route path="/returns-exchanges" element={<ReturnExchangePage />} />
                   <Route path="/join-us" element={<JoinUsPage />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/privacy" element={<PrivacyPage />} />
+                  <Route path="/terms" element={<TermsPage />} />
                   {/* TODO: Add more routes */}
                   <Route path="*" element={
                     <div className="min-h-screen flex items-center justify-center">

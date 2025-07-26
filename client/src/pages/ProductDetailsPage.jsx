@@ -117,9 +117,9 @@ const ProductDetailsPage = () => {
           <p className="text-gray-600 text-lg">{product.brand}</p>
 
           <div className="flex items-center space-x-4">
-            <span className="text-3xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
+            <span className="text-3xl font-bold text-gray-900">₹{product.price.toFixed(2)}</span>
             {product.originalPrice && product.originalPrice > product.price && (
-              <span className="text-gray-500 line-through text-xl">${product.originalPrice.toFixed(2)}</span>
+              <span className="text-gray-500 line-through text-xl">₹{product.originalPrice.toFixed(2)}</span>
             )}
             {product.rating > 0 && (
               <div className="flex items-center ml-4">
