@@ -19,6 +19,9 @@ import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import Footer from './components/Footer';
 import './App.css';
+import CartPage from './pages/CartPage';
+import WishlistPage from './pages/WishlistPage';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
   return (
@@ -42,7 +45,10 @@ function App() {
                   <Route path="/join-us" element={<JoinUsPage />} />
                   <Route path="/about" element={<AboutPage />} />
                   <Route path="/privacy" element={<PrivacyPage />} />
+                  <Route path="/cart" element={<CartPage />} />
+                  <Route path="/wishlist" element={<WishlistPage />} />
                   <Route path="/terms" element={<TermsPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
                   {/* TODO: Add more routes */}
                   <Route path="*" element={
                     <div className="min-h-screen flex items-center justify-center">

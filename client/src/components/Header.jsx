@@ -6,11 +6,11 @@ import { useCart } from '../contexts/CartContext'
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
 } from './ui/dropdown-menu';
 
 const Header = () => {
@@ -50,7 +50,7 @@ const Header = () => {
                 {/* Top bar */}
                 <div className="bg-black text-white text-sm py-2">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        Free shipping on orders over $100 | Free returns
+                        Free shipping on orders over ₹100 | Free returns
                     </div>
                 </div>
 
